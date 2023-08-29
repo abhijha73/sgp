@@ -1,0 +1,120 @@
+@import '../../../assets/css/variables';
+.container{
+  padding: 50px 50px 25px 50px;
+}
+.email-actions {
+  padding-left: 70px;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.action-button {
+  cursor: pointer;
+  height: 30px;
+  width: 200px;
+}
+.user-img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.email-view {
+  display: flex;
+   
+}
+.user-data {
+  flex: 1;
+}
+  
+.sender-name {
+  @include  second-bold-font;
+}
+.sender-subject {
+  @include second-normal-font;
+}
+.sender-email {
+  @include third-normal-font;
+  color: $grey-color;
+}
+.email-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .chat-message {
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    word-wrap: break-word;
+    max-width: 70%;
+  }
+  
+  .input-container {
+    border: 1px solid #33333333;
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @include third-normal-font;
+    input {
+      border: none;
+      width: 100%;
+    }
+  }
+  .mail-content {
+    height: calc(100% - 35px);
+    // background: red;
+  }
+  .time {
+    font: normal normal bold 14px/19px Product Sans;
+    margin: 20px 0;
+  }
+  .mail-text {
+    @include third-normal-font;
+  }
+  .mail-greet {
+    @include  first-bold-font;
+    margin-bottom: 30px;
+  }
+  .media-preview {
+    display: flex;
+    .media-1 {
+      flex: 1;
+      height: 15vh;
+      width: 100%;
+    }
+    .media-2 {
+      flex: 2;
+      height: 30vh;
+      width: 100%;
+    }
+    .media-3 {
+      flex:1;
+      height: 15vh;
+      width: 100%;
+    }
+  }
+  .media-image {
+    height: 100%; 
+    width: 100%;
+     object-fit: contain;
+  }
+  .file-upload {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .file-upload > input
+{
+  cursor: pointer;
+    display: none;
+
+}

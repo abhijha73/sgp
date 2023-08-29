@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="user-profile">
+    <div class="user-img"></div>
+    <div class="name-and-email">
+      <div class="name">{{ userDetails.name }}</div>
+      <div class="email">{{ userDetails.email }}</div>
+    </div>
+  </div>
+  <div class="folder-list">
+    <div (click)="selectedFolder = folder" [class.selected-folder]="selectedFolder == folder" *ngFor="let folder of primaryFoldersList" class="folder">
+      <div class="folder-icon" [style.background]="folder.imgUrl"></div>
+      <ng-container *ngIf="!folder.unreadCount">
+        <div>{{ folder.name }}</div>
+      </ng-container>
+      <ng-container *ngIf="folder.unreadCount">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            align-items: center;
+          "
+        >
+          <div>{{ folder.name }}</div>
+          <div class="unread-count" *ngIf="folder.unreadCount">
+            {{ folder.unreadCount }}
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <button  mat-button class="easy-button" >Compose</button>
+    <button (click)="logout()" mat-button class="easy-button" >Log Out</button>
+  </div>
+  
+</div>

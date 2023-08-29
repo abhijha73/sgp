@@ -1,0 +1,53 @@
+
+@import '../../../assets/css/variables';
+.email-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+  }
+  .user-img {
+    height: 50px;
+    width: 50px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rest-details {
+    flex: 1;
+}
+  
+  .name-and-time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    .name {
+@include second-bold-font;
+    }
+    .time {
+font-size: 14px;
+line-height: 19px;
+font-weight: bold;
+    }
+  }
+
+  
+  .email-content {
+    margin: 0 0 10px 0;
+    @include third-normal-font;
+    color: #333333B3;
+  }
+  
+  .unsubscribe-link {
+    color: $highlight-color;
+    text-decoration: none;
+  }
+  .email-subject {
+    @include second-normal-font
+  }
+  

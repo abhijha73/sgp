@@ -1,0 +1,8 @@
+<div class="container">
+  <lib-search-box></lib-search-box>
+  <div class="threads-container">
+    <div *ngFor="let thread of emailListArr">
+      <app-sender-profile [thread]="thread"></app-sender-profile>
+    </div>
+  </div>
+</div>

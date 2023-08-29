@@ -1,0 +1,22 @@
+<div class="email-card">
+  <img class="user-img"
+    [src]="thread.senderImgUrl"
+    onerror="this.src='assets/images/user_profile.webp'"
+  />
+  <div class="rest-details">
+    <div class="name-and-time">
+      <div class="name">{{ thread.senderName }}</div>
+      <div class="time">{{ thread.receivedTimeStamp | fromNow }}</div>
+    </div>
+    <div class="email-subject">{{ thread.messageSubject }}</div>
+    <div class="email-content">
+      {{ thread.messageText }}
+    </div>
+    <ng-container *ngIf="thread.hasAttachments">
+      <div class="email-footer">
+        <mat-icon> attach_file</mat-icon>
+        {{ thread.attachmentUrls.length }} Attachments
+      </div>
+    </ng-container>
+  </div>
+</div>

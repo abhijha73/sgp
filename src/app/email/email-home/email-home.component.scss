@@ -1,0 +1,20 @@
+@import '../../../assets/css/variables';
+.container {
+display: flex;
+}
+.folders-part {
+background: $folder-list-bg-color;
+flex: 2;
+}
+.mails-list-and-details {
+    flex: 8;
+    display: flex;
+    .left-part {
+        background: $thread-list-bg-color;
+        flex: 4;
+    }
+    .right-part {
+        background-color: $app-bg-color;
+        flex: 6;
+    }
+}
