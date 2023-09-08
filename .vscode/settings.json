@@ -1,0 +1,17 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": true,
+    
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "editor.hover.enabled": true,
+    "editor.codeActionsOnSave": {
+
+    },
+    "less.lint.duplicateProperties": "warning",
+    "less.format.spaceAroundSelectorSeparator": true,
+    "autoimport.doubleQuotes": true,
+    "angular.trace.server": "messages",
+    "json.format.keepLines": true,
+    "eslint.ignoreUntitled": false,
+    "typescript.validate.enable": true,
+    "javascript.validate.enable": true,
+}

@@ -1,4 +1,5 @@
 @import '../../../../assets/css/variables';
+
 .container {
     height: 100%;
     width: 100%;
@@ -7,8 +8,10 @@
     align-items: center;
     flex-direction: column;
 }
+
 .form-group {
     display: flex;
     flex-direction: column;
     max-width: 250px;
+    background: transparent;
 }

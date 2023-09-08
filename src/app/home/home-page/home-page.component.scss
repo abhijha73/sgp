@@ -1,0 +1,7 @@
+@import '../../../assets/css/variables';
+.container {
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+    @include second-normal-font;
+}

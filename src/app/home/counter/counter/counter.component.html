@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="child-container">
+        <app-counter-output [counter]="counter"></app-counter-output>
+    </div>
+    <div class="child-container">
+        <app-counter-buttons (incrementEmitter)="onIncrement()" (decrementEmitter)="onDecrement()" (resetEmitter)="onReset()"></app-counter-buttons>
+    </div>
+</div>

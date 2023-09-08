@@ -1,11 +1,11 @@
-import { EmailHomeComponent } from './email-home/email-home.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: EmailHomeComponent,
+    component: HomePageComponent,
   },
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class EmailRoutingModule {}
+export class HomeRoutingModule {}

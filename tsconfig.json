@@ -8,6 +8,7 @@
         "dist/custom-lib"
       ]
     },
+    "noImplicitAny": false,
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -31,8 +32,17 @@
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  }
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
+    "strictTemplates": false
+  },
+  "include": [
+    "src",
+    "global.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "plugins",
+    "public"
+  ]
 }
