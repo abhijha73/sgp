@@ -10,6 +10,7 @@ import { CounterComponent } from './counter/counter/counter.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { SharedModule } from '../shared/shared.module';
+import { CustomCounterInputComponent } from './counter/custom-counter-input/custom-counter-input.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SharedModule } from '../shared/shared.module';
     HomeContentComponent,
     CounterComponent,
     CounterOutputComponent,
-    CounterButtonsComponent
+    CounterButtonsComponent,
+    CustomCounterInputComponent
   ],
   imports: [
     CommonModule,
